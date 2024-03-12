@@ -1,0 +1,25 @@
+
+server:
+  port: 9999
+
+feign:
+  client:
+    config:
+      feignName:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: FULL
+
+confluent:
+  clusterId: lkc-y6z8rp
+  clusterUrl: https://pkc-12576z.us-west2.gcp.confluent.cloud:443
+  identityPool: pool-pkW7
+
+microsoft:
+    auth:
+      clientId: 46fe79b1-dbe3-476d-a85c-1d5463a3272c
+      clientSecret:
+      tenantID: b8f149cb-d45e-4077-a094-ccde815e3aca
+      scope: api://46fe79b1-dbe3-476d-a85c-1d5463a3272c/.default
+      grant_type: client_credentials
+      url: https://login.microsoftonline.com/b8f149cb-d45e-4077-a094-ccde815e3aca
